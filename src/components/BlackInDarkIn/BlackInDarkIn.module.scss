@@ -1,0 +1,33 @@
+@import "./src/_fonts";
+
+$fontWghtBlack: 250;
+
+
+.BlackInDarkIn {}
+
+.black{
+  font-variation-settings: 'wght' $fontWghtBlack;
+}
+.poster{
+  width: 1322px;
+  height: 2160px;
+  background-color: #191719;
+  font-family: 'AvenirNext-VF';
+  font-size: 80px;
+  color: white;
+}
+
+.firstLine{
+
+  margin: 0 35% 0 35%;
+}
+.secondLine{
+  margin: 0 35% 0 35%;
+}
+.thirdLine{
+  margin: 0 35% 0 35%;
+}
+.fourthLine{
+  margin: 0 35% 0 35%;
+}
+
