@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Arimo-VF';
   src: url("../src/assets/fonts/Arimo-VariableFont_wght.woff2") format('woff2-variations');
+  font-weight: 400 700;
 }
 
 
@@ -9,3 +10,22 @@
   src: url("../src/assets/fonts/AvenirNextVariable-Roman.woff2") format('woff2-variations');
   font-weight: 250 900;
 }
+
+@font-face {
+  font-family: 'Sequel-Sans-Display';
+  src: url("../src/assets/fonts/SequelSansVFA1.woff2") format('woff2-variations');
+  font-weight: 70 220;
+}
+
+
+// Both WHOA Fonts have 4 axes: Horizontal, Vertical, Rotation, Zoom
+@font-face {
+  font-family: 'WHOA-Spine';
+  src: url("../src/assets/fonts/WHOA-Spine.woff2") format('woff2-variations');
+}
+
+@font-face {
+  font-family: 'WHOA-Top';
+  src: url("../src/assets/fonts/WHOA-Top.woff2") format('woff2-variations');
+}
+

@@ -299,18 +299,28 @@ class BlackInDarkIn extends React.Component<Props, any>{
                     <div className={styles.firstLine} style={{fontWeight: this.state.weightFirstLine}}>
                         Black
                     </div>
-                    <div className={styles.secondLine} id={'firstIn'} style={{fontWeight: this.state.weightSecondLine}}>
-                        in
+                    <div className={styles.secondLine}>
+                        <div className={styles.firstIn} id={'firstIn'} style={{fontWeight: this.state.weightSecondLine}}>
+                            in
+                        </div>
 
+                        <div className={styles.generalInformation}>
+                            <div className={styles.dateLine}>3.12.2010 - 27.2.2011</div>
+                            <div className={styles.exhibitionName}>Die Neue Sammlung</div>
+                            <div className={styles.museumName}>The International Design Museum</div>
+                            <div className={styles.name}>Pinakothek der Moderne</div>
+                        </div>
                     </div>
                     <div className={styles.thirdLine} style={{fontWeight: this.state.weightThirdLine}}>
 
                         Dark
 
                     </div>
-                    <div className={styles.fourthLine} id={'secondIn'} style={{fontWeight: this.state.weightFourthLine}}>
-                        in
-
+                    <div className={styles.fourthLine}>
+                        <div className={styles.hubertusHamm}>Hubertus Hamm</div>
+                        <div className={styles.secondIn} id={'secondIn'} style={{fontWeight: this.state.weightFourthLine}}>
+                            in
+                        </div>
                     </div>
                 </div>
             </div>

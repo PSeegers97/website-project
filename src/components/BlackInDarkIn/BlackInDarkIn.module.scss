@@ -3,10 +3,13 @@
 $fontWghtBlack: 250;
 
 
-.BlackInDarkIn {}
+.BlackInDarkIn {
+  text-align: center;
+}
 
 .black{
   font-variation-settings: 'wght' $fontWghtBlack;
+  text-align: center;
 }
 .poster{
   width: 1322px;
@@ -18,16 +21,29 @@ $fontWghtBlack: 250;
 }
 
 .firstLine{
-
+  text-align: center;
   margin: 0 35% 0 35%;
 }
 .secondLine{
   margin: 0 35% 0 35%;
+  display: flex;
+  justify-content: space-between;
 }
 .thirdLine{
   margin: 0 35% 0 35%;
 }
 .fourthLine{
+  display: flex;
   margin: 0 35% 0 35%;
 }
+
+.generalInformation{
+  font-size: 12px;
+}
+
+.hubertusHamm{
+  font-size: 12px;
+}
+
+
 

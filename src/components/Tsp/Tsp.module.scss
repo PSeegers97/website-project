@@ -2,9 +2,156 @@
 
 .Tsp {
   font-family: 'Arimo-VF';
+  font-size: 80px;
+  font-weight: 700;
+}
+.tAnimation{
+  margin-left: 24px;
+  position: relative;
+  animation: t-animation 5s forwards ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-delay: 4s;
+}
+
+
+.secondLine {
+  margin-left: 44px;
+  display: flex;
+}
+
+.thirdLine {
+  margin-left: 64px;
+  display: flex;
+}
+.fourthLine{
+  margin-left: 92px;
+  display: flex;
+}
+.fallingAnimation{
+  font-weight: 400;
+  position: relative;
+  animation: falling-animation 2s forwards ease-in;
+  -webkit-animation-timing-function: ease-in;
+  animation-delay: 4s;
+  margin-left: 220px;
+}
+
+.sixthLine{
+  display: flex;
+}
+
+.summerAnimation {
+  display: flex;
+}
+
+.movingInFromRightToLeft{
+  display: flex;
+  flex-direction: row;
+  left: 1300px;
+  position: relative;
+  animation: movingInFromRightToLeft 2s forwards ease-in-out;
+  animation-delay: 4s;
+}
+
+.dotDropAnimation{
+  display: flex;
+  height: 30px;
+  align-items: center;
+  transform: translateY(-50%);
+  font-size: 77px;
+  position: relative;
+  animation: dotDropAnimation 300ms forwards ease-in-out;
+  animation-delay: 10s;
+}
+
+.pushingBlockAnimation {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-variation-settings: 'wght' 400;
+  position: relative;
+  animation: stretchAndPush 300ms forwards ease-in-out;
+  animation-delay: 9700ms;
+}
+
+.movingRightMultipleCharsAnimation{
+  display: flex;
+  position: relative;
+  animation: pushing-right 2s forwards ease-in-out;
+}
+
+.movingFarRightAnimation{
+  position: relative;
+  animation: movingFarRight 2s forwards ease-in-out;
+}
+
+.singleSmallerChar{
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 43px;
+}
+
+.farMovingAnimation{
+  display: flex;
+  position: relative;
+  animation: movingFarRight 2s forwards ease-in-out;
 
 }
 
+.seventhLine {
+  display: flex;
+}
+
+.eighthLine{
+  display: flex;
+}
+
+.ninethLine {
+  display: flex;
+}
+
+.tenthLine{
+  display: flex;
+}
+
+.twelvesLine {
+  display: flex;
+  justify-content: space-between;
+
+  .smallFontBlock{
+    animation-delay: 10s;
+  }
+}
+
+
+.smallFontBlock{
+  font-size: 16px;
+  margin: 27px 0;
+  font-weight: 400;
+  opacity: 0;
+  animation: displaySmallFontsAfterAnimations 500ms forwards ease-in-out;
+  animation-delay: 1s;
+}
+
+.thirdLineSmallFontBlock{
+
+  font-size: 16px;
+  margin: 27px 0;
+  font-weight: 400;
+  opacity: 0;
+  animation: displaySmallFontsAfterAnimations 500ms forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+.seventhLineSmallFontBlock{
+  font-size: 16px;
+  margin: 27px 0;
+  font-weight: 400;
+  opacity: 0;
+  animation: displaySmallFontsAfterAnimations 500ms forwards ease-in-out;
+  animation-delay: 3s;
+}
 .headerSlim {
   font-weight: 400;
   font-size: 60px;
@@ -13,4 +160,131 @@
 .headerFat{
   font-weight: 700;
   font-size: 60px;
+}
+
+.pullingRightAnimation{
+  position: relative;
+  animation: stretchingToLeft 500ms forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+.pullingLeftAnimation{
+  position: relative;
+  animation: stretchingToRight 500ms forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+
+.rotatedLineLeft{
+  margin-left: 130px;
+  transform: rotate(-45deg);
+}
+.rotatedLineRight{
+  transform: rotate(45deg);
+}
+.layingLine{
+  width: 64px;
+  text-align: center;
+  transform: rotate(90deg);
+}
+.movingRightAnimation {
+  display: flex;
+  position: relative;
+  animation: pushing-right 2s forwards ease-in-out;
+}
+
+.movingAndFadingAnimation {
+  position: relative;
+  animation: pushing-right 2s forwards ease-in-out, fading-i 4s forwards ease-in-out;
+}
+
+.stayingBlock{
+  display: flex;
+
+  .smallFontBlock{
+    animation-delay: 10s;
+  }
+}
+
+.eleventhLineAnimation{
+  display: flex;
+  position: relative;
+  animation: speeding-in 4s forwards ease-in-out;
+}
+
+@keyframes t-animation {
+  0% {font-variation-settings: 'wght' 550; left: 0; top: 0}
+  10% {font-variation-settings: 'wght' 400; left: 130px; top: 100px;}
+  20% {font-variation-settings: 'wght' 700; left: 260px; top: 0;}
+  30% {font-variation-settings: 'wght' 400; left: 390px; top: 100px;}
+  40% {font-variation-settings: 'wght' 700; left: 520px; top: 0px;}
+  50% {font-variation-settings: 'wght' 400; left: 650px; top: 100px;}
+  60% {font-variation-settings: 'wght' 700; left: 780px; top: 0px;}
+  70% {font-variation-settings: 'wght' 400; left: 910px; top: 100px;}
+  80% {font-variation-settings: 'wght' 700; left: 1040px; top: 0px;}
+  90% {font-variation-settings: 'wght' 400; left: 1170px; top: 100px;}
+  100% {font-variation-settings: 'wght' 700; left: 1300px; top: 0px;}
+
+}
+
+@keyframes falling-animation {
+  0% {font-variation-settings: 'wght' 400; left: 0; top: 0}
+  100% {font-variation-settings: 'wght' 700; left: -40px; top: 40px;}
+}
+
+@keyframes pushing-right {
+  0%{left: 0}
+  100% {left: 30px}
+}
+
+@keyframes fading-i {
+  0% {font-variation-settings: 'wgth' 700; left: 0;}
+  100% {font-variation-settings: 'wght' 400; left: 100px;}
+}
+
+@keyframes speeding-in {
+  0% {font-variation-settings: 'wght' 400; left:0}
+  100% {font-variation-settings: 'wght' 700; left:1000px}
+}
+
+@keyframes movingInFromRightToLeft {
+  0% {font-variation-settings: 'wght' 400; left: 1300px;}
+  100% {font-variation-settings: 'wght' 700; left: 200px;}
+
+}
+
+@keyframes displaySmallFontsAfterAnimations {
+  0% {opacity: 0}
+  100% {opacity: 1}
+
+}
+
+@keyframes stretchingToLeft {
+  0% {left: 0; font-variation-settings: 'wght' 700}
+  50% {left: 60px; font-variation-settings: 'wght' 500}
+  100% {left: 30px; font-variation-settings: 'wght' 700}
+}
+
+@keyframes stretchingToRight {
+  0% {left: 0; font-variation-settings: 'wght' 700}
+  30% {left: -60px; font-variation-settings: 'wght' 500}
+  100% {left: 0px; font-variation-settings: 'wght' 700}
+}
+
+@keyframes dotDropAnimation {
+  0% {left: 0; top: 0; }
+  30% {left: -7px; top: 0px}
+  40% {left: -15px; top: 5px}
+  100% {left: -30px; top: 45px;}
+}
+
+@keyframes stretchAndPush {
+  0% {left: 0; }
+  50% {left: 10px; }
+  100% {left: 0;}
+}
+
+@keyframes movingFarRight {
+  0% {left: 0}
+  100% {left: 60px}
 }
