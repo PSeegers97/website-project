@@ -1,21 +1,22 @@
 @import "./src/_fonts";
 
 .Tsp {
-  font-family: 'Arimo-VF';
+  font-family: 'Helvetica Now-VF';
   font-size: 80px;
   font-weight: 700;
 }
 .tAnimation{
   margin-left: 24px;
   position: relative;
+  //height: 200px;
   animation: t-animation 5s forwards ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
-  animation-delay: 4s;
+  animation-delay: 2s;
 }
 
 
 .secondLine {
-  margin-left: 44px;
+  margin: 80px 0 0 44px;
   display: flex;
 }
 
@@ -30,14 +31,15 @@
 .fallingAnimation{
   font-weight: 400;
   position: relative;
-  animation: falling-animation 2s forwards ease-in;
+  animation: falling-animation 350ms forwards ease-in;
   -webkit-animation-timing-function: ease-in;
-  animation-delay: 4s;
-  margin-left: 220px;
+  animation-delay: 8500ms;
+  margin-left: 270px;
 }
 
 .sixthLine{
   display: flex;
+  margin-top: 60px;
 }
 
 .summerAnimation {
@@ -47,10 +49,12 @@
 .movingInFromRightToLeft{
   display: flex;
   flex-direction: row;
-  left: 1300px;
+  opacity: 0;
+  //left: 1300px;
   position: relative;
+  font-variation-settings: 'wght' 400;
   animation: movingInFromRightToLeft 2s forwards ease-in-out;
-  animation-delay: 4s;
+  animation-delay: 10s;
 }
 
 .dotDropAnimation{
@@ -61,28 +65,34 @@
   font-size: 77px;
   position: relative;
   animation: dotDropAnimation 300ms forwards ease-in-out;
-  animation-delay: 10s;
+  animation-delay: 13000ms;
 }
 
 .pushingBlockAnimation {
   display: flex;
   flex-direction: column;
-  font-size: 16px;
+  font-size: 18px;
+  margin-top: 13px;
+  margin-left: 5px;
   font-variation-settings: 'wght' 400;
   position: relative;
-  animation: stretchAndPush 300ms forwards ease-in-out;
-  animation-delay: 9700ms;
+  opacity: 0;
+  animation: displaySmallFontsAfterAnimations 500ms forwards ease-in-out, stretchAndPush 300ms forwards ease-in-out;
+  animation-delay: 10s, 12700ms;
+
 }
 
 .movingRightMultipleCharsAnimation{
   display: flex;
   position: relative;
   animation: pushing-right 2s forwards ease-in-out;
+  animation-delay: 6500ms;
 }
 
 .movingFarRightAnimation{
   position: relative;
   animation: movingFarRight 2s forwards ease-in-out;
+  animation-delay: 6500ms;
 }
 
 .singleSmallerChar{
@@ -96,23 +106,34 @@
   display: flex;
   position: relative;
   animation: movingFarRight 2s forwards ease-in-out;
+  animation-delay: 6500ms;
+}
 
+.farMovingLettersAnimation{
+  display: flex;
+  position: relative;
+  animation: pushing-right 2s forwards ease-in-out;
+  animation-delay: 6500ms;
 }
 
 .seventhLine {
   display: flex;
+  margin-left: 24px;
 }
 
 .eighthLine{
   display: flex;
+  margin-left: 138px;
 }
 
 .ninethLine {
   display: flex;
+  margin-left: 24px;
 }
 
 .tenthLine{
   display: flex;
+  margin-left: 138px;
 }
 
 .twelvesLine {
@@ -120,37 +141,40 @@
   justify-content: space-between;
 
   .smallFontBlock{
-    animation-delay: 10s;
+    animation-delay: 17s;
   }
 }
 
 
 .smallFontBlock{
-  font-size: 16px;
-  margin: 27px 0;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-left: 5px;
   font-weight: 400;
   opacity: 0;
   animation: displaySmallFontsAfterAnimations 500ms forwards ease-in-out;
-  animation-delay: 1s;
+  animation-delay: 17s;
 }
 
 .thirdLineSmallFontBlock{
 
-  font-size: 16px;
-  margin: 27px 0;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-left: 5px;
   font-weight: 400;
   opacity: 0;
   animation: displaySmallFontsAfterAnimations 500ms forwards ease-in-out;
-  animation-delay: 2s;
+  animation-delay: 17s;
 }
 
 .seventhLineSmallFontBlock{
-  font-size: 16px;
-  margin: 27px 0;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-left: 5px;
   font-weight: 400;
   opacity: 0;
   animation: displaySmallFontsAfterAnimations 500ms forwards ease-in-out;
-  animation-delay: 3s;
+  animation-delay: 17s;
 }
 .headerSlim {
   font-weight: 400;
@@ -165,37 +189,41 @@
 .pullingRightAnimation{
   position: relative;
   animation: stretchingToLeft 500ms forwards ease-in-out;
-  animation-delay: 2s;
+  animation-delay: 9500ms;
 }
 
 .pullingLeftAnimation{
   position: relative;
   animation: stretchingToRight 500ms forwards ease-in-out;
-  animation-delay: 2s;
+  animation-delay: 9500ms;
 }
 
 
 .rotatedLineLeft{
-  margin-left: 130px;
+  margin-left: 215px;
   transform: rotate(-45deg);
 }
 .rotatedLineRight{
   transform: rotate(45deg);
+  margin-left: 120px;
 }
 .layingLine{
   width: 64px;
   text-align: center;
   transform: rotate(90deg);
+  margin: 0 60px;
 }
 .movingRightAnimation {
   display: flex;
   position: relative;
   animation: pushing-right 2s forwards ease-in-out;
+  animation-delay: 6500ms;
 }
 
 .movingAndFadingAnimation {
   position: relative;
-  animation: pushing-right 2s forwards ease-in-out, fading-i 4s forwards ease-in-out;
+  animation: movingFarRight 2s forwards ease-in-out;//, fading-i 4s forwards ease-in-out;
+  animation-delay: 6500ms;
 }
 
 .stayingBlock{
@@ -209,47 +237,51 @@
 .eleventhLineAnimation{
   display: flex;
   position: relative;
-  animation: speeding-in 4s forwards ease-in-out;
+  font-variation-settings: 'wght' 400;
+  animation: speeding-in 1500ms forwards ease-in;
+  animation-delay: 14s;
 }
 
+
 @keyframes t-animation {
-  0% {font-variation-settings: 'wght' 550; left: 0; top: 0}
-  10% {font-variation-settings: 'wght' 400; left: 130px; top: 100px;}
-  20% {font-variation-settings: 'wght' 700; left: 260px; top: 0;}
-  30% {font-variation-settings: 'wght' 400; left: 390px; top: 100px;}
-  40% {font-variation-settings: 'wght' 700; left: 520px; top: 0px;}
-  50% {font-variation-settings: 'wght' 400; left: 650px; top: 100px;}
-  60% {font-variation-settings: 'wght' 700; left: 780px; top: 0px;}
-  70% {font-variation-settings: 'wght' 400; left: 910px; top: 100px;}
-  80% {font-variation-settings: 'wght' 700; left: 1040px; top: 0px;}
-  90% {font-variation-settings: 'wght' 400; left: 1170px; top: 100px;}
-  100% {font-variation-settings: 'wght' 700; left: 1300px; top: 0px;}
+  0% {font-variation-settings: 'wght' 550; transform: translateX(0) translateY(0)}
+  10% {font-variation-settings: 'wght' 400; transform: translateX(130px) translateY(100px)}
+  20% {font-variation-settings: 'wght' 700; transform: translateX(260px) translateY(0)}
+  30% {font-variation-settings: 'wght' 400; transform: translateX(390px) translateY(100px)}
+  40% {font-variation-settings: 'wght' 700; transform: translateX(520px) translateY(0);}
+  50% {font-variation-settings: 'wght' 400; transform: translateX(650px) translateY(100px);}
+  60% {font-variation-settings: 'wght' 700; transform: translateX(780px) translateY(0);}
+  70% {font-variation-settings: 'wght' 400; transform: translateX(910px) translateY(100px);}
+  80% {font-variation-settings: 'wght' 700; transform: translateX(1040px) translateY(0);}
+  90% {font-variation-settings: 'wght' 400; transform: translateX(1170px) translateY(100px);}
+  100% {font-variation-settings: 'wght' 700; transform: translateX(1300px) translateY(0);}
 
 }
 
 @keyframes falling-animation {
-  0% {font-variation-settings: 'wght' 400; left: 0; top: 0}
-  100% {font-variation-settings: 'wght' 700; left: -40px; top: 40px;}
+  0% {font-variation-settings: 'wght' 400; transform: translate(0)}
+  80% {transform: translate(-50px, 50px);}
+  100% {font-variation-settings: 'wght' 700; transform: translate(-40px, 40px);}
 }
 
 @keyframes pushing-right {
-  0%{left: 0}
-  100% {left: 30px}
+  0%{transform: translate(0)}
+  100% {transform: translateX(30px)}
 }
 
 @keyframes fading-i {
-  0% {font-variation-settings: 'wgth' 700; left: 0;}
-  100% {font-variation-settings: 'wght' 400; left: 100px;}
+  0% {font-variation-settings: 'wgth' 700; transform: translate(0)}
+  100% {font-variation-settings: 'wght' 400; transform: translateX(100px)}
 }
 
 @keyframes speeding-in {
-  0% {font-variation-settings: 'wght' 400; left:0}
-  100% {font-variation-settings: 'wght' 700; left:1000px}
+  0% {font-variation-settings: 'wght' 400; transform: translate(0)}
+  100% {font-variation-settings: 'wght' 700; transform: translateX(1000px)}
 }
 
 @keyframes movingInFromRightToLeft {
-  0% {font-variation-settings: 'wght' 400; left: 1300px;}
-  100% {font-variation-settings: 'wght' 700; left: 200px;}
+  0% {opacity: 0;font-variation-settings: 'wght' 400; transform: translateX(1300px);}
+  100% {opacity: 1;font-variation-settings: 'wght' 700; transform: translateX(200px);}
 
 }
 
@@ -260,31 +292,36 @@
 }
 
 @keyframes stretchingToLeft {
-  0% {left: 0; font-variation-settings: 'wght' 700}
-  50% {left: 60px; font-variation-settings: 'wght' 500}
-  100% {left: 30px; font-variation-settings: 'wght' 700}
+  0% {transform: translate(0); font-variation-settings: 'wght' 700}
+  50% {transform: translateX(60px); font-variation-settings: 'wght' 500}
+  100% {transform: translateX(0px); font-variation-settings: 'wght' 700}
 }
 
 @keyframes stretchingToRight {
-  0% {left: 0; font-variation-settings: 'wght' 700}
-  30% {left: -60px; font-variation-settings: 'wght' 500}
-  100% {left: 0px; font-variation-settings: 'wght' 700}
+  0% {transform: translateX(0px); font-variation-settings: 'wght' 700}
+  30% {transform: translateX(-60px); font-variation-settings: 'wght' 500}
+  100% {transform: translateX(0px); font-variation-settings: 'wght' 700}
 }
 
 @keyframes dotDropAnimation {
-  0% {left: 0; top: 0; }
-  30% {left: -7px; top: 0px}
-  40% {left: -15px; top: 5px}
-  100% {left: -30px; top: 45px;}
+  0% {transform: translate(0);}
+  30% {transform: translate(-7px, 0);}
+  40% {transform: translate(-15px, 5px);}
+  100% {transform: translate(-30px, 32px);}
 }
 
 @keyframes stretchAndPush {
-  0% {left: 0; }
-  50% {left: 10px; }
-  100% {left: 0;}
+  0% {transform: translate(0) }
+  50% {transform: translateX(10px); }
+  100% {transform: translate(0);}
 }
 
 @keyframes movingFarRight {
-  0% {left: 0}
-  100% {left: 60px}
+  0% {transform: translate(0)}
+  100% {transform: translateX(60px);}
+}
+
+@keyframes moving-R-Right {
+  0% {transform: translate(0);}
+  100% {transform: translateX(90px);}
 }
