@@ -1,0 +1,87 @@
+@import "./src/_fonts";
+
+
+.BlackInDarkIn {
+  text-align: left;
+  width: 756px;
+  height: 1080px;
+  background-color: #191719;
+}
+
+.black{
+  text-align: center;
+}
+.poster{
+  height: 1080px;
+  font-family: 'AvenirNext-Bold';
+  font-size: 264px;
+  color: white;
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.upperWrapper{
+  height: 540px;
+  grid-row: 1;
+  margin: 10% 5% 0 5%;
+}
+
+.lowerWrapper{
+  height: 540px;
+  grid-row: 2;
+  margin: 0 10% 5% 5%;
+}
+
+.blackLine{
+  text-align: center;
+  margin-bottom: -50px;
+  margin-left: -17px;
+  margin-top: -24px;
+}
+.inLine{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  overflow: hidden;
+}
+
+.firstIn{
+  grid-column: 2;
+  align-self: start;
+  margin-top: -90px;
+}
+
+.generalInformation{
+  font-family: 'AvenirNext-Thin';
+  font-size: 12px;
+  grid-column: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5%;
+
+}
+
+.darkLine{
+  margin-bottom: -50px;
+  margin-top: 50px;
+}
+.authorLine{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  overflow: hidden;
+}
+
+.hubertusHamm{
+  font-family: 'AvenirNext-Thin';
+  font-size: 12px;
+  grid-column: 1;
+  margin-left: 20px;
+}
+
+.secondIn{
+  grid-column: 2;
+  margin-top: -90px;
+}
+
+
+
