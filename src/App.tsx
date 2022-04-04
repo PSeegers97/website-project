@@ -12,40 +12,69 @@ import ReactDOM from "react-dom";
 import BlaBlaBlaKat from "./components/BlaBlaBlaKat/BlaBlaBlaKat";
 import SwimCity from "./components/SwimCity/SwimCity";
 
+import BlaBlaBlaKatStatic from "./components/static-posters/static-fonts/Bla-Bla-Bla-Kat/BlaBlaBlaKatStatic";
+import BlaBlaBlaKatStaticVF from "./components/static-posters/variable-fonts/Bla-Bla-Bla-Kat/BlaBlaBlaKatStaticVF";
+
+import BlackInDarkInStaticVF from "./components/static-posters/variable-fonts/BlackInDarkInVF/BlackInDarkInStaticVF";
+import BlackInDarkInStaticSF from "./components/static-posters/static-fonts/BlackInDarkInStaticFonts/BlackInDarkInStaticSF";
+import TypographicSummerProgramStatic
+    from "./components/static-posters/static-fonts/Typographic-summer-program/TypographicSummerProgramStatic";
+import TypographicSummerProgramVF
+    from "./components/static-posters/variable-fonts/Typographic-Summer-Program-VF/TypographicSummerProgramVF";
+import StaticPosters from "./components/StaticPosters/StaticPosters";
+
 function App() {
   return (
     <div className="App">
 
         <BrowserRouter>
             <div>
+
+                <div className={styles.navbar}>
+                    <div className={styles.subnav}>
+
+                    </div>
+
+                </div>
                 <nav>
-                    <ul className='navBar'>
-                        <li className='menu-point'>
-                            <Link to="/">Black In Dark In</Link>
-                        </li>
-                        <li className='menu-point'>
-                            <Link to="/typographicsummerproject">Typographic Summer Project</Link>
-                        </li>
-                        <li className='menu-point'>
-                            <Link to='/blablablakat'>Bla Bla Bla Kat</Link>
-                        </li>
-                        <li className='menu-point'>
-                            <Link to='/stadtlueckenausstellung'>Stadtlückenausstellung</Link>
-                        </li>
-                        <li className='menu-point'>
-                            <Link to='/swimcity'>Swim City Slam</Link>
-                        </li>
-                    </ul>
+
                 </nav>
 
-                {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
                 <Routes>
-                    <Route path="/" element={<CallOnMouseChanges/>}></Route>
-                    <Route path="/typographicsummerproject" element={<Tsp/>} ></Route>
-                    <Route path='/blablablakat' element={<BlaBlaBlaKat/>}></Route>
-                    <Route path='/stadtlueckenausstellung'></Route>
-                    <Route path='/swimcity' element={<SwimCity/>}></Route>
+                    <Route path="static">
+                        <Route path="blackInDarkIn" element={<BlackInDarkInStaticSF/>}></Route>
+                        <Route path="typographicsummerproject" element={<TypographicSummerProgramStatic/>} ></Route>
+                        <Route path='blablablakat' element={<BlaBlaBlaKatStatic/>}></Route>
+                    </Route>
+
+                    <Route path="variable">
+                        <Route path="blackInDarkIn" element={<BlackInDarkInStaticVF/>}></Route>
+                        <Route path="typographicsummerproject" element={<TypographicSummerProgramVF/>} ></Route>
+                        <Route path='blablablakat' element={<BlaBlaBlaKatStaticVF/>}></Route>
+                    </Route>
+
+                    <Route path="staticAnimated">
+
+                    </Route>
+
+                    <Route path="variableAnimated">
+                        <Route path="typographicsummerproject" element={<Tsp/>} ></Route>
+                        <Route path='blablablakat' element={<BlaBlaBlaKat/>}></Route>
+                        <Route path='swimcity' element={<SwimCity/>}></Route>
+                    </Route>
+
+                    <Route path="staticInteractive"></Route>
+
+                    <Route path="variableInteractive">
+                        <Route path="blackInDarkIn" element={<CallOnMouseChanges/>}></Route>
+                    </Route>
+
+
+
+
+
+
+
                 </Routes>
             </div>
         </BrowserRouter>
