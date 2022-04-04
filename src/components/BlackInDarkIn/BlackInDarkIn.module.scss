@@ -12,37 +12,56 @@ $fontWghtBlack: 250;
   text-align: center;
 }
 .poster{
-  width: 1322px;
-  height: 2160px;
+  width: 661px;
+  height: 1080px;
   background-color: #191719;
   font-family: 'AvenirNext-VF';
-  font-size: 80px;
+  font-size: 200px;
   color: white;
 }
 
 .firstLine{
   text-align: center;
-  margin: 0 35% 0 35%;
+
 }
 .secondLine{
-  margin: 0 35% 0 35%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  overflow: hidden;
 }
-.thirdLine{
-  margin: 0 35% 0 35%;
-}
-.fourthLine{
-  display: flex;
-  margin: 0 35% 0 35%;
+
+.firstIn{
+  grid-column: 2;
+  align-self: start;
+  margin-top: -120px;
 }
 
 .generalInformation{
   font-size: 12px;
+  grid-column: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5%; // maybe needs to be changed
+}
+
+.thirdLine{
+
+}
+.fourthLine{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  overflow: hidden;
 }
 
 .hubertusHamm{
   font-size: 12px;
+  grid-column: 1;
+}
+
+.secondIn{
+  grid-column: 2;
+  margin-top: -120px;
 }
 
 
