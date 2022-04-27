@@ -6,22 +6,17 @@ import {
     Routes,
     Link, BrowserRouter
 } from "react-router-dom";
-import CallOnMouseChanges from "./components/CallOnMouseChanges/CallOnMouseChanges";
-import Tsp from "./components/Tsp/Tsp";
-import ReactDOM from "react-dom";
-import BlaBlaBlaKat from "./components/BlaBlaBlaKat/BlaBlaBlaKat";
-import SwimCity from "./components/SwimCity/SwimCity";
-
-import BlaBlaBlaKatStatic from "./components/static-posters/static-fonts/Bla-Bla-Bla-Kat/BlaBlaBlaKatStatic";
-import BlaBlaBlaKatStaticVF from "./components/static-posters/variable-fonts/Bla-Bla-Bla-Kat/BlaBlaBlaKatStaticVF";
+import CallOnMouseChanges from "./components/InteractivePosters/components/variableInteractive/CallOnMouseChanges/CallOnMouseChanges";
+import Tsp from "./components/AnimatedPosters/VariableAnimated/Tsp/Tsp";
+import BlaBlaBlaKat from "./components/AnimatedPosters/VariableAnimated/BlaBlaBlaKat/BlaBlaBlaKat";
+import SwimCity from "./components/AnimatedPosters/VariableAnimated/SwimCity/SwimCity";
 
 import BlackInDarkInStaticVF from "./components/static-posters/variable-fonts/BlackInDarkInVF/BlackInDarkInStaticVF";
 import BlackInDarkInStaticSF from "./components/static-posters/static-fonts/BlackInDarkInStaticFonts/BlackInDarkInStaticSF";
-import TypographicSummerProgramStatic
-    from "./components/static-posters/static-fonts/Typographic-summer-program/TypographicSummerProgramStatic";
-import TypographicSummerProgramVF
-    from "./components/static-posters/variable-fonts/Typographic-Summer-Program-VF/TypographicSummerProgramVF";
-import StaticPosters from "./components/StaticPosters/StaticPosters";
+import BlackInDarkInVariableAnimated
+    from "./components/AnimatedPosters/VariableAnimated/BlackInDarkIn/BlackInDarkInVariableAnimated";
+import PageTurnOver from "./components/InteractivePosters/components/PageTurnOver";
+
 
 function App() {
   return (
@@ -42,31 +37,37 @@ function App() {
 
                 <Routes>
                     <Route path="static">
-                        <Route path="blackInDarkIn" element={<BlackInDarkInStaticSF/>}></Route>
-                        <Route path="typographicsummerproject" element={<TypographicSummerProgramStatic/>} ></Route>
-                        <Route path='blablablakat' element={<BlaBlaBlaKatStatic/>}></Route>
+                        <Route path='blackInDarkIn' element={<BlackInDarkInVariableAnimated/>}></Route>
+                        <Route path="typographicsummerproject" element={<Tsp/>} ></Route>
+                        <Route path='blablablakat' element={<BlaBlaBlaKat/>}></Route>
                     </Route>
 
                     <Route path="variable">
-                        <Route path="blackInDarkIn" element={<BlackInDarkInStaticVF/>}></Route>
-                        <Route path="typographicsummerproject" element={<TypographicSummerProgramVF/>} ></Route>
-                        <Route path='blablablakat' element={<BlaBlaBlaKatStaticVF/>}></Route>
+                        <Route path="typographicsummerproject" element={<Tsp/>} ></Route>
+                        <Route path='blablablakat' element={<BlaBlaBlaKat/>}></Route>
+                        <Route path='blackInDarkIn' element={<BlackInDarkInVariableAnimated/>}></Route>
                     </Route>
 
                     <Route path="staticAnimated">
-
+                        <Route path="typographicsummerproject" element={<Tsp/>}></Route>
+                        <Route path='blablablakat' element={<BlaBlaBlaKat/>}></Route>
+                        <Route path='blackInDarkIn' element={<BlackInDarkInVariableAnimated/>}></Route>
                     </Route>
 
                     <Route path="variableAnimated">
                         <Route path="typographicsummerproject" element={<Tsp/>} ></Route>
                         <Route path='blablablakat' element={<BlaBlaBlaKat/>}></Route>
+                        <Route path='blackInDarkIn' element={<BlackInDarkInVariableAnimated/>}></Route>
                         <Route path='swimcity' element={<SwimCity/>}></Route>
                     </Route>
 
-                    <Route path="staticInteractive"></Route>
+                    <Route path="staticInteractive">
+                        <Route path="typographicsummerproject" element={<PageTurnOver/>}></Route>
+                    </Route>
 
                     <Route path="variableInteractive">
                         <Route path="blackInDarkIn" element={<CallOnMouseChanges/>}></Route>
+                        <Route path="typographicsummerproject" element={<PageTurnOver/>}></Route>
                     </Route>
 
 
