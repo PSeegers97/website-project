@@ -1,13 +1,13 @@
-@import "./src/_fonts";
+@import "../../../fonts";
 
-.BlaBlaBlaKatStaticVF {
+.BlaBlaBlaKat {
   width: 1322px;
   height: 2160px;
-  font-family: 'Sequel-Sans-Display';
+  font-family: 'Sequel-Sans';
   text-align: center;
   font-size: 580px;
   overflow: hidden;
-  font-weight: 220;
+  font-weight: 900;
 }
 
 .firstLine{
