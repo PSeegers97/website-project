@@ -1,0 +1,41 @@
+@import "../../../../fonts";
+
+.BlaBlaBlaKat {
+  font-family: Sequel-Sans-Display;
+  text-align: center;
+  font-size: 120px;
+
+}
+
+.firstLine{
+  font-weight: 70;
+  animation: scream 300ms forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+.secondLine{
+  font-weight: 70;
+  animation: scream 300ms forwards ease-in-out;
+  animation-delay: 2300ms;
+}
+
+.thirdLine{
+  font-weight: 70;
+  animation: scream 300ms forwards ease-in-out;
+  animation-delay: 2600ms;
+}
+
+.fourthLine{
+  font-weight: 70;
+  animation: scream 250ms forwards ease-in-out;
+  animation-delay: 3000ms;
+}
+
+
+@keyframes scream {
+
+  0% {font-variation-settings: 'wght' 70; font-size: 120px;}
+  80%{font-size: 280px}
+  100% {font-variation-settings: 'wght' 220; font-size: 240px}
+
+}

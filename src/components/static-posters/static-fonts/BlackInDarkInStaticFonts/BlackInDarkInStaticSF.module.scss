@@ -13,23 +13,26 @@
 }
 .poster{
   height: 1080px;
-  font-family: 'AvenirNext-Bold';
+  font-family: 'West';
   font-size: 264px;
+  font-weight: 800;
   color: white;
   display: grid;
   grid-template-rows: 50% 50%;
 }
 
 .upperWrapper{
-  height: 540px;
+  height: 486px;
   grid-row: 1;
-  margin: 10% 5% 0 5%;
+  margin: 0% 5% 0 5%;
+  text-align: center;
 }
 
 .lowerWrapper{
-  height: 540px;
+  height: 486px;
   grid-row: 2;
-  margin: 0 10% 5% 5%;
+  margin: 0 5% 0% 5%;
+  text-align: center;
 }
 
 .blackLine{
@@ -47,12 +50,12 @@
 .firstIn{
   grid-column: 2;
   align-self: start;
-  margin-top: -90px;
+  margin-top: -125px;
 }
 
 .generalInformation{
-  font-family: 'AvenirNext-Thin';
   font-size: 12px;
+  font-weight: 200;
   grid-column: 3;
   display: flex;
   flex-direction: column;
@@ -72,15 +75,15 @@
 }
 
 .hubertusHamm{
-  font-family: 'AvenirNext-Thin';
   font-size: 12px;
+  font-weight: 200;
   grid-column: 1;
   margin-left: 20px;
 }
 
 .secondIn{
   grid-column: 2;
-  margin-top: -90px;
+  margin-top: -125px;
 }
 
 

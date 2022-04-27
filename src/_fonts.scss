@@ -37,6 +37,11 @@
   src: url("assets/fonts/variable-fonts/WHOA-Top.woff2") format('woff2-variations');
 }
 
+@font-face {
+  font-family: 'West-VF';
+  src: url("assets/fonts/variable-fonts/WestTrial VAR.woff2") format('woff2-variations');
+}
+
 
 // STATIC FONTS
 
@@ -45,49 +50,49 @@
 
 // Avenir Next
 @font-face {
-  font-family: 'AvenirNext-UltraThin';
+  font-family: 'AvenirNext';
   src: url("../src/assets/fonts/static-Fonts/AvenirNext/AvenirNextLTPro-UltLt.woff2") format('woff2-variations');
   font-weight: 100;
 }
 
 @font-face {
-  font-family: 'AvenirNext-Thin';
+  font-family: 'AvenirNext';
   src: url("../src/assets/fonts/static-Fonts/AvenirNext/AvenirNextLTPro-Thin.woff2") format('woff2-variations');
   font-weight: 200;
 }
 
 @font-face {
-  font-family: 'AvenirNext-Light';
+  font-family: 'AvenirNext';
   src: url("../src/assets/fonts/static-Fonts/AvenirNext/AvenirNextLTPro-Light.woff2") format('woff2-variations');
   font-weight: 300;
 }
 
 @font-face {
-  font-family: 'AvenirNext-Regular';
+  font-family: 'AvenirNext';
   src: url("../src/assets/fonts/static-Fonts/AvenirNext/AvenirNextLTPro-Regular.woff2") format('woff2-variations');
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'AvenirNext-Medium';
+  font-family: 'AvenirNext';
   src: url("../src/assets/fonts/static-Fonts/AvenirNext/AvenirNextLTPro-Medium.woff2") format('woff2-variations');
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'AvenirNext-Demi';
+  font-family: 'AvenirNext';
   src: url("../src/assets/fonts/static-Fonts/AvenirNext/AvenirNextLTPro-Demi.woff2") format('woff2-variations');
   font-weight: 700;
 }
 
 @font-face {
-  font-family: 'AvenirNext-Bold';
+  font-family: 'AvenirNext';
   src: url("../src/assets/fonts/static-Fonts/AvenirNext/AvenirNextLTPro-Bold.woff2") format('woff2-variations');
   font-weight: 800;
 }
 
 @font-face {
-  font-family: 'AvenirNext-Heavy';
+  font-family: 'AvenirNext';
   src: url("../src/assets/fonts/static-Fonts/AvenirNext/AvenirNextLTPro-Heavy.woff2") format('woff2-variations');
   font-weight: 900;
 }
@@ -96,108 +101,167 @@
 //Arimo
 
 @font-face {
-  font-family: 'Arimo-Regular';
+  font-family: 'Arimo';
   src: url("../src/assets/fonts/static-Fonts/Arimo/Arimo-Regular.woff2") format('woff2-variations');
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Arimo-Medium';
+  font-family: 'Arimo';
   src: url("../src/assets/fonts/static-Fonts/Arimo/Arimo-Medium.woff2") format('woff2-variations');
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Arimo-Semi';
+  font-family: 'Arimo';
   src: url("../src/assets/fonts/static-Fonts/Arimo/Arimo-SemiBold.woff2") format('woff2-variations');
   font-weight: 600;
 }
 
 @font-face {
-  font-family: 'Arimo-Bold';
+  font-family: 'Arimo';
   src: url("../src/assets/fonts/static-Fonts/Arimo/Arimo-Bold.woff2") format('woff2-variations');
   font-weight: 800;
 }
 
 // Helvetica Now
 @font-face {
-  font-family: 'Helvetica Now Thin';
-  src: url("assets/fonts/static-Fonts/Helvetica Now/HelveticaNowTextThin.ttf");
+  font-family: 'Helvetica Now';
+  src: url("assets/fonts/static-Fonts/Helvetica Now/HelveticaNowTextThin.woff2") format('woff2-variations');
   font-weight: 100;
 }
 
 @font-face {
-  font-family: 'Helvetica Now Extra Light';
-  src: url("assets/fonts/static-Fonts/Helvetica Now/HelveticaNowTextExtraLight.ttf");
+  font-family: 'Helvetica Now';
+  src: url("assets/fonts/static-Fonts/Helvetica Now/HelveticaNowTextExtraLight.woff2") format('woff2-variations');
   font-weight: 200;
 }
 
 @font-face {
-  font-family: 'Helvetica Now Light';
-  src: url("assets/fonts/static-Fonts/Helvetica Now/HelveticaNowTextLight.ttf");
+  font-family: 'Helvetica Now';
+  src: url("assets/fonts/static-Fonts/Helvetica Now/HelveticaNowTextLight.woff2") format('woff2-variations');
   font-weight: 300;
 }
 
 @font-face {
-  font-family: 'Helvetica Now Regular';
-  src: url("assets/fonts/static-Fonts/Helvetica Now/HelveticaNowText.ttf");
+  font-family: 'Helvetica Now';
+  src: url("assets/fonts/static-Fonts/Helvetica Now/HelveticaNowText.woff2") format('woff2-variations');
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Helvetica Now Medium';
-  src: url("assets/fonts/static-Fonts/Helvetica Now/HelveticaNowTextMedium.ttf");
+  font-family: 'Helvetica Now';
+  src: url("assets/fonts/static-Fonts/Helvetica Now/HelveticaNowTextMedium.woff2") format('woff2-variations');
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Helvetica Now Bold';
-  src: url("assets/fonts/static-Fonts/Helvetica Now/HelveticaNowTextBold.ttf");
+  font-family: 'Helvetica Now';
+  src: url("assets/fonts/static-Fonts/Helvetica Now/HelveticaNowTextBold.woff2") format('woff2-variations');
   font-weight: 700;
 }
 
 @font-face {
-  font-family: 'Helvetica Now Black';
-  src: url("assets/fonts/static-Fonts/Helvetica Now/HelveticaNowTextBlack.ttf");
+  font-family: 'Helvetica Now';
+  src: url("assets/fonts/static-Fonts/Helvetica Now/HelveticaNowTextBlack.woff2") format('woff2-variations');
   font-weight: 900;
 }
 
 // Sequel Sans
 @font-face {
-  font-family: 'Sequel-Sans-Light';
+  font-family: 'Sequel-Sans';
   src: url("../src/assets/fonts/static-Fonts/SequelSans/SequelSans-Light.woff2") format('woff2-variations');
   font-weight: 300;
 }
 
 @font-face {
-  font-family: 'Sequel-Sans-Regular';
+  font-family: 'Sequel-Sans';
   src: url("../src/assets/fonts/static-Fonts/SequelSans/SequelSans-Regular.woff2") format('woff2-variations');
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Sequel-Sans-Medium';
+  font-family: 'Sequel-Sans';
   src: url("../src/assets/fonts/static-Fonts/SequelSans/SequelSans-Medium.woff2") format('woff2-variations');
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Sequel-Sans-Semi';
+  font-family: 'Sequel-Sans';
   src: url("../src/assets/fonts/static-Fonts/SequelSans/SequelSans-Semi.woff2") format('woff2-variations');
   font-weight: 600;
 }
 
 @font-face {
-  font-family: 'Sequel-Sans-Bold';
+  font-family: 'Sequel-Sans';
   src: url("../src/assets/fonts/static-Fonts/SequelSans/SequelSans-Bold.woff2") format('woff2-variations');
   font-weight: 800;
 }
 
 @font-face {
-  font-family: 'Sequel-Sans-Heavy';
+  font-family: 'Sequel-Sans';
   src: url("../src/assets/fonts/static-Fonts/SequelSans/SequelSans-Heavy.woff2") format('woff2-variations');
   font-weight: 900;
 }
+
+
+// West
+
+@font-face {
+  font-family: 'West';
+  src: url("../src/assets/fonts/static-Fonts/West/WestTrial-Hairline.woff2") format('woff2-variations');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'West';
+  src: url("../src/assets/fonts/static-Fonts/West/WestTrial-Thin.woff2") format('woff2-variations');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'West';
+  src: url("../src/assets/fonts/static-Fonts/West/WestTrial-ExtraLight.woff2") format('woff2-variations');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'West';
+  src: url("../src/assets/fonts/static-Fonts/West/WestTrial-Light.woff2") format('woff2-variations');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'West';
+  src: url("../src/assets/fonts/static-Fonts/West/WestTrial-Regular.woff2") format('woff2-variations');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'West';
+  src: url("../src/assets/fonts/static-Fonts/West/WestTrial-Medium.woff2") format('woff2-variations');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'West';
+  src: url("../src/assets/fonts/static-Fonts/West/WestTrial-Bold.woff2") format('woff2-variations');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'West';
+  src: url("../src/assets/fonts/static-Fonts/West/WestTrial-ExtraBold.woff2") format('woff2-variations');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'West';
+  src: url("../src/assets/fonts/static-Fonts/West/WestTrial-Black.woff2") format('woff2-variations');
+  font-weight: 900;
+}
+
+
 
 
 

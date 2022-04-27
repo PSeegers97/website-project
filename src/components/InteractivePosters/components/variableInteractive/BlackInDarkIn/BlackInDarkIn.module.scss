@@ -1,30 +1,28 @@
-@import "./src/_fonts";
+@import "../../../../../fonts";
 
+$fontWghtBlack: 250;
 
 
 .BlackInDarkIn {
-  text-align: left;
-  width: 756px;
-  height: 1080px;
-  background-color: #191719;
+  text-align: center;
 }
 
 .black{
+  font-variation-settings: 'wght' $fontWghtBlack;
   text-align: center;
 }
 .poster{
+  width: 661px;
   height: 1080px;
+  background-color: #191719;
   font-family: 'West-VF';
-  font-size: 264px;
+  font-size: 200px;
   color: white;
   display: grid;
   grid-template-rows: 50% 50%;
-  font-weight: 720;
-  font-variation-settings: 'wght' 550, 'wdth' 100;
 }
 
 .upperWrapper{
-  height: 540px;
   grid-row: 1;
   margin: 0 5%;
   overflow: hidden;
@@ -32,19 +30,17 @@
 }
 
 .lowerWrapper{
-  height: 540px;
   grid-row: 2;
   margin: 0 5%;
   overflow: hidden;
   text-align: center;
 }
 
-.blackLine{
+.firstLine{
   text-align: center;
-  margin-bottom: -50px;
-  margin-left: -17px;
+
 }
-.inLine{
+.secondLine{
   display: grid;
   grid-template-columns: 33% 33% 33%;
   overflow: hidden;
@@ -53,40 +49,36 @@
 .firstIn{
   grid-column: 2;
   align-self: start;
-  margin-top: -110px;
-}
-
-.smallBlock{
-  font-variation-settings: 'wght' 250, 'wdth' 100;
-  font-size: 12px;
+  margin-top: -84px;
 }
 
 .generalInformation{
+  font-size: 12px;
   grid-column: 3;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 5%;
-
+  margin-left: 5%; // maybe needs to be changed
 }
 
-.darkLine{
-  margin-bottom: -50px;
-  //margin-top: 50px;
+.thirdLine{
+
 }
-.authorLine{
+.fourthLine{
   display: grid;
   grid-template-columns: 33% 33% 33%;
   overflow: hidden;
 }
 
 .hubertusHamm{
+  font-size: 12px;
   grid-column: 1;
-  margin-left: 20px;
 }
 
 .secondIn{
   grid-column: 2;
-  margin-top: -110px;
+  margin-top: -84px;
 }
+
+
 
