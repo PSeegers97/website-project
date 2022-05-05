@@ -3,7 +3,7 @@ import {useLocation} from "react-router-dom";
 import staticStatic from "../../../static-posters/static-fonts/BlackInDarkInStaticFonts/BlackInDarkInStaticSF.module.scss";
 import variableAnimated from "../BlackInDarkIn/BlackInDarkInVariableAnimated.module.scss";
 import variableStatic from "../../../static-posters/variable-fonts/BlackInDarkInVF/BlackInDarkInStaticVF.module.scss";
-import staticAnimated from "../../StaticAnimated/BlaBlaBlaKatStaticAnimated.module.scss";
+import staticAnimated from "../../StaticAnimated/BlackInDarkInStaticAnimated.module.scss";
 
 
 function BlackInDarkInVariableAnimated(){
