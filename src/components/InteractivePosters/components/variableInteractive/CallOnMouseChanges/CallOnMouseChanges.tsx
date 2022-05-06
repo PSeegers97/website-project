@@ -5,8 +5,6 @@ import BlackInDarkIn from "../BlackInDarkIn/BlackInDarkIn";
 interface CallOnMouseChangesProps {}
 
 const CallOnMouseChanges: FC<CallOnMouseChangesProps> = () => {
-    //const [position, setPosition] = useState(MouseHover);
-    //
 
     const [position, setPosition] = useState({x: 0, y: 0});
 

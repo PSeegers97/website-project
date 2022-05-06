@@ -1,5 +1,16 @@
 @import "./src/_fonts";
 
+@property --cursorXT {
+  syntax: '*';
+  initial-value: 0px;
+  inherits: true;
+}
+
+@property --cursorYT {
+  syntax: '*';
+  initial-value: 0px;
+  inherits: true;
+}
 
 .BlackInDarkIn:root {
   cursor: none;
@@ -15,7 +26,7 @@
   position: absolute;
   pointer-events: none;
   background: radial-gradient(
-                  circle 100px at var(--cursorX) var(--cursorY),
+                  circle 150px at var(--cursorXT) var(--cursorYT),
                   rgba(0,0,0,0) 0%,
                   rgba(0,0,0,.5) 80%,
                   rgba(0,0,0,.95) 100%
@@ -108,7 +119,7 @@
 
 
 @keyframes continousFlash {
-  0% {--cursorX: 0; --cursorY: 0;}
-  100% {--cursorX: 756; --cursorY: 1080;}
-
+  0% {--cursorXT: 0px; --cursorYT: 0px;}
+  50% {--cursorXT: 200px; --cursorYT: 200px;}
+  100% {--cursorXT: 0px; --cursorYT: 0px;}
 }
