@@ -1,10 +1,10 @@
-.CallOnMouseChanges:root {
+.FlashlightAnimation:root {
   cursor: none;
   --cursorX: 50vw;
   --cursorY: 50vh;
 }
 
-.CallOnMouseChanges:before {
+.FlashlightAnimation:before {
   content: '';
   display: block;
   width: 100%;
@@ -17,10 +17,4 @@
                   rgba(0,0,0,.5) 80%,
                   rgba(0,0,0,.95) 100%
   )
-}
-
-
-.CallOnMouseChanges {
-  height: 1080px;
-  width: 756px;
 }
