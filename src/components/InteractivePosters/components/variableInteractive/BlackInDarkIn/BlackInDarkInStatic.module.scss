@@ -1,0 +1,85 @@
+@import "../../../../../fonts";
+
+$fontWghtBlack: 250;
+
+
+.BlackInDarkIn {
+  text-align: center;
+}
+
+.black{
+  text-align: center;
+}
+.poster{
+  width: 661px;
+  height: 1080px;
+  background-color: #191719;
+  font-family: 'West';
+  font-size: 200px;
+  color: white;
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.upperWrapper{
+  grid-row: 1;
+  margin: 0 5%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.lowerWrapper{
+  grid-row: 2;
+  margin: 0 5%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.firstLine{
+  text-align: center;
+
+}
+.secondLine{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  overflow: hidden;
+}
+
+.firstIn{
+  grid-column: 2;
+  align-self: start;
+  margin-top: -84px;
+}
+
+.generalInformation{
+  font-size: 12px;
+  grid-column: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 200;
+  margin-left: 5%; // maybe needs to be changed
+}
+
+.thirdLine{
+
+}
+.fourthLine{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  overflow: hidden;
+}
+
+.hubertusHamm{
+  font-size: 12px;
+  font-weight: 200;
+  grid-column: 1;
+}
+
+.secondIn{
+  grid-column: 2;
+  margin-top: -84px;
+}
+
+
+
