@@ -181,7 +181,7 @@
 
 .eighthLine{
   display: flex;
-  margin-left: 138px;
+  margin-left: 80px;
 }
 
 .pullingArrowLeft{
@@ -264,6 +264,8 @@
 .pushingText{
   display: flex;
   flex-direction: column;
+  margin-left: 5px;
+  margin-top: 8px;
 }
 
 .pushingArrowLeft{
@@ -330,8 +332,8 @@
 
 .pullingRightAnim{
   display: flex;
-  animation: pushing-right 2s forwards ease-in-out;
-  animation-delay: 10500ms;
+  animation: pushing-right 500ms forwards ease-in-out;
+  animation-delay: 9500ms;
 }
 
 .pullingLeftAnimation{
@@ -341,7 +343,7 @@
 }
 
 .rotatedLineLeft{
-  margin-left: 215px;
+  margin-left: 150px;
   transform: rotate(-45deg);
 }
 
@@ -447,7 +449,7 @@
 
 @keyframes stretchingToLeft {
   0% {transform: translate(0); font-variation-settings: 'wght' 700}
-  50% {transform: translateX(60px); font-variation-settings: 'wght' 500}
+  50% {transform: translateX(60px); font-variation-settings: 'wght' 300}
   100% {transform: translateX(0px); font-variation-settings: 'wght' 700}
 }
 
