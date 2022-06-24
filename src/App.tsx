@@ -51,13 +51,13 @@ function App() {
                     <Route path="staticAnimated">
                         <Route path="typographicsummerproject" element={<Tsp/>}></Route>
                         <Route path='blablablakat' element={<BlaBlaBlaKat/>}></Route>
-                        <Route path='blackInDarkIn' element={<BlackInDarkInVariableAnimated/>}></Route>
+                        <Route path='blackInDarkIn' element={<CallOnMouseChanges animation={true} variable={false}/>}></Route>
                     </Route>
 
                     <Route path="variableAnimated">
                         <Route path="typographicsummerproject" element={<Tsp/>} ></Route>
                         <Route path='blablablakat' element={<BlaBlaBlaKat/>}></Route>
-                        <Route path='blackInDarkIn' element={<BlackInDarkInVariableAnimated/>}></Route>
+                        <Route path='blackInDarkIn' element={<CallOnMouseChanges animation={true} variable={true}/>}></Route>
                         <Route path='swimcity' element={<SwimCity/>}></Route>
                     </Route>
 
@@ -66,7 +66,7 @@ function App() {
                     </Route>
 
                     <Route path="variableInteractive">
-                        <Route path="blackInDarkIn" element={<CallOnMouseChanges/>}></Route>
+                        <Route path="blackInDarkIn" element={<CallOnMouseChanges animation={false} variable={true}/>}></Route>
                         <Route path="typographicsummerproject" element={<PageTurnOver/>}></Route>
                     </Route>
 
