@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './BlackInDarkIn.module.scss';
+import style from './BlackInDarkIn.module.scss';
 import AnimatedText from "../../../../AnimatedPosters/VariableAnimated/AnimatedText/AnimatedText";
 import staticStyles from './BlackInDarkInStatic.module.scss';
 
@@ -19,7 +19,7 @@ class BlackInDarkIn extends React.Component<BlackInDarkInProps, any> {
     constructor(props: BlackInDarkInProps) {
         super(props);
         this.state = {
-            styles: styles
+            styles: style
         }
     }
 
@@ -38,47 +38,48 @@ class BlackInDarkIn extends React.Component<BlackInDarkInProps, any> {
         if(!this.props.variable) {
             console.log('Nicht Variable ', this.props.variable);
             this.setState({styles: staticStyles })
+            console.log('state: ', this.state)
         }
         else {
             console.log('Variable: ', this.props.variable);
-            this.setState({styles: styles})
+            this.setState({styles: style})
+            console.log('state: ', this.state.styles)
         }
     }
 
 
     render() {
-
         document.documentElement.style.setProperty('--cursorX', this.props.x + 'px')
         document.documentElement.style.setProperty('--cursorY', this.props.y + 'px')
         // @ts-ignore
         return (
-            <div className={styles.BlackInDarkIn} data-testid="BlackInDarkIn">
-                <div className={styles.poster} id={styles.black}>
-                    <div className={styles.upperWrapper}>
-                        <div className={styles.firstLine} id={styles.firstLine}>
+            <div className={this.state.styles.BlackInDarkIn} data-testid="BlackInDarkIn">
+                <div className={this.state.styles.poster} id={this.state.styles.black}>
+                    <div className={this.state.styles.upperWrapper}>
+                        <div className={this.state.styles.firstLine} id={this.state.styles.firstLine}>
                             <AnimatedText x={this.props.x} y={this.props.y} text={'Black'} />
                         </div>
 
-                        <div className={styles.secondLine}>
-                            <div className={styles.firstIn} id={'firstIn'}>
+                        <div className={this.state.styles.secondLine}>
+                            <div className={this.state.styles.firstIn} id={'firstIn'}>
                                 <AnimatedText x={this.props.x} y={this.props.y} text={'in'} />
                             </div>
-                            <div className={styles.generalInformation}>
-                                <div className={styles.dateLine}>3.12.2010 - 27.2.2011</div>
-                                <div className={styles.exhibitionName}>Die Neue Sammlung</div>
-                                <div className={styles.museumName}>The International Design Museum</div>
-                                <div className={styles.name}>Pinakothek der Moderne</div>
+                            <div className={this.state.styles.generalInformation}>
+                                <div className={this.state.styles.dateLine}>3.12.2010 - 27.2.2011</div>
+                                <div className={this.state.styles.exhibitionName}>Die Neue Sammlung</div>
+                                <div className={this.state.styles.museumName}>The International Design Museum</div>
+                                <div className={this.state.styles.name}>Pinakothek der Moderne</div>
                             </div>
                         </div>
                     </div>
-                    <div className={styles.lowerWrapper}>
-                        <div className={styles.thirdLine} id={styles.thirdLine}>
+                    <div className={this.state.styles.lowerWrapper}>
+                        <div className={this.state.styles.thirdLine} id={this.state.styles.thirdLine}>
                             <AnimatedText x={this.props.x} y={this.props.y} text={'Dark'} />
                         </div>
-                        <div className={styles.fourthLine}>
-                            <div className={styles.hubertusHamm}>Hubertus Hamm</div>
-                            <div className={styles.secondIn} id={'secondIn'}>
-                                <AnimatedText x={this.props.x} y={this.props.y} text={'in'} />
+                        <div className={this.state.styles.fourthLine}>
+                            <div className={this.state.styles.hubertusHamm}>Hubertus Hamm</div>
+                            <div className={this.state.styles.secondIn} id={'secondIn'}>
+                                <AnimatedText x={this.props.x} y={this.props.y} text={'in'}/>
                             </div>
                         </div>
                     </div>
