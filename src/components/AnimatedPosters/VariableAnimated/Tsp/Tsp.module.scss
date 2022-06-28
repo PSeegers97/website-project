@@ -4,17 +4,18 @@
   font-family: 'Helvetica Now-VF';
   font-size: 80px;
   font-variation-settings: 'wght' 700;
-  width: 1080px;
+  width: 1920px;
+  height: 1344px;
 }
 
 .firstLine{
   display: grid;
   grid-template-rows: 5% 95%;
-
+  height: 200px;
   .shortLine{
     margin-left: 20px;
-    margin-top: 45px;
-    height: 96px;
+    margin-top: 42px;
+    height: 57px;
     width: 3px;
   }
 }
@@ -33,11 +34,17 @@
 .tBackground{
   background: no-repeat url("../../../../assets/graphic_elements/TMovement.svg");
   //background-size: 500px 200px;
-  height: 100px;
+  height: 57px;
+  width: 2000px;
   z-index: -1;
-  margin-top: 29px;
-  margin-left: -500px;
+  margin-top: 32px;
+  margin-left: 6px;
   grid-row-start: 2;
+}
+
+.tBackgroundImage{
+  width: 100%;
+  height: 100%;
 }
 
 .secondLine {
@@ -144,14 +151,14 @@
   background: no-repeat url("../../../../assets/graphic_elements/Middle_Longest_Line.svg");
   width: 2px;
   height: 200px;
-  margin-top: 25px;
+  margin-top: 32px;
 }
 
 .rightLongLine{
   background: no-repeat url("../../../../assets/graphic_elements/Longest_Line.svg");
   width: 2px;
   height: 250px;
-  margin-top: 25px;
+  margin-top: 32px;
 }
 
 .farMovingAnimation{
@@ -187,15 +194,15 @@
 .pullingArrowLeft{
   background: no-repeat url("../../../../assets/graphic_elements/Arrow left_ back.svg");
   width: 75px;
-  height: 75px;
-  margin-top: 25px;
+  height: 57px;
+  margin-top: 32px;
 }
 
 .pullingArrowRight{
   background: no-repeat url("../../../../assets/graphic_elements/Arrow_right_back.svg");
   width: 75px;
-  height: 75px;
-  margin-top: 25px;
+  height: 57px;
+  margin-top: 32px;
 }
 
 .ninethLine {
@@ -211,7 +218,7 @@
 .pointDroppingAnimation{
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 16px;
 }
 
 .dotDropAnimation{
@@ -220,24 +227,25 @@
   height: 30px;
   align-items: center;
   transform: translateY(-50%);
-  font-size: 77px;
+  font-size: 70px;
   position: relative;
   animation: dotDropAnimation 300ms forwards ease-in-out;
   animation-delay: 13000ms;
+  margin-left: 1px;
 }
 
 .pushingArrowDown{
   background: no-repeat url("../../../../assets/graphic_elements/Arrow_down_left.svg");
   width: 75px;
-  height: 75px;
-  margin-top: 25px;
+  height: 57px;
+  margin-top: 32px;
 }
 
 .shortLine{
   background: no-repeat url("../../../../assets/graphic_elements/Shortest_Line.svg");
   width: 2px;
-  height: 75px;
-  margin-top: 25px;
+  height: 57px;
+  margin-top: 32px;
 }
 
 .singleSmallerChar{
@@ -271,7 +279,7 @@
 .pushingArrowLeft{
   background: no-repeat url("../../../../assets/graphic_elements/Push_arrow_left.svg");
   width: 75px;
-  height: 75px;
+  height: 57px;
   margin-top: 5px;
   margin-left: 5px;
 }
@@ -356,7 +364,7 @@
   width: 64px;
   text-align: center;
   transform: rotate(90deg);
-  margin: 0 60px;
+  margin: -15px 60px 0 60px;
 }
 
 .movingRightAnimation {
@@ -369,7 +377,7 @@
 .movingAndFadingAnimation{
   display: flex;
   position: relative;
-  animation: movingFarRight 2s forwards ease-in-out;//, fading-i 4s forwards ease-in-out;
+  animation: movingFarRight 2s forwards ease-in-out;
   animation-delay: 6500ms;
 }
 
@@ -380,6 +388,18 @@
   z-index: -1;
   margin-top: 25px;
   margin-left: 60px;
+  opacity: 0;
+  animation: opacityAnimation 4s forwards ease-out;
+  animation-delay: 8500ms;
+}
+
+.fadingAnimation {
+  width: 20px;
+  font-family: 'Helvetica Now-VF';
+  font-size: 80px;
+  font-variation-settings: 'wght' 700;
+  animation: fading-i 2s forwards ease-out;
+  animation-delay: 9000ms;
 }
 
 .stayingBlock{
@@ -390,6 +410,10 @@
 }
 
 .stayingChars{
+  display: flex;
+}
+
+.eleventhLine{
   display: flex;
 }
 
@@ -427,8 +451,9 @@
 }
 
 @keyframes fading-i {
-  0% {font-variation-settings: 'wgth' 700; transform: translate(0)}
-  100% {font-variation-settings: 'wght' 50; transform: translateX(100px)}
+  0% {font-variation-settings: 'wght' 700; transform: translateX(0); opacity: 1}
+  //60% {font-variation-settings: 'wght' 500; opacity: 0.8}
+  100% {font-variation-settings: 'wght' 50; transform: translateX(100px); opacity: 0}
 }
 
 @keyframes speeding-in {
@@ -441,7 +466,7 @@
   100% {opacity: 1;font-variation-settings: 'wght' 700; transform: translateX(200px);}
 }
 
-@keyframes displaySmallFontsAfterAnimations {
+@keyframes opacityAnimation {
   0% {opacity: 0}
   100% {opacity: 1}
 
@@ -492,5 +517,7 @@
   80%{ opacity: 0;}
   100% {opacity: 1; margin-left: 30px; }
 }
+
+
 
 

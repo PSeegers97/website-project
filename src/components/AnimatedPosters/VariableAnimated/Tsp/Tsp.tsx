@@ -4,6 +4,7 @@ import staticAnimated from '../../StaticAnimated/TypographicSummerProgramStaticA
 import staticStatic from '../../../static-posters/static-fonts/TypographicSummerProgramStatic.module.scss';
 import variableStatic from '../../../static-posters/variable-fonts/TypographicSummerProgramVF.module.scss';
 import {useLocation} from "react-router-dom";
+import tBackground from '../../../../assets/graphic_elements/TMovement.svg'
 
 
 function Tsp() {
@@ -38,7 +39,8 @@ function Tsp() {
                 <div className={styles.tAnimation}>
                     T
                 </div>
-                <div className={styles.tBackground}></div>
+                <div className={styles.tBackground}>
+                </div>
             </div>
             <div className={styles.secondLine}>
                 <div className={styles.shortLine}></div>
@@ -96,7 +98,7 @@ function Tsp() {
 
                 <div className={styles.movingAndFadingAnimation}>
                     <div className={styles.shortLine}></div>
-                    i
+                    <div className={styles.fadingAnimation}>i</div>
                 </div>
                 <div className={styles.backgroundFadingI}></div>
             </div>
@@ -238,12 +240,32 @@ function Tsp() {
                     </div>
                 </div>
             </div>
+            <div className={styles.eleventhLine}>
+                {/*<div className={styles.shortLine}></div>
+                <div className={styles.shortLine}></div>
+                <div className={styles.shortLine}></div>
+                <div className={styles.shortLine}></div>
+                <div className={styles.shortLine}></div>
+                <div className={styles.shortLine}></div>
+                <div className={styles.shortLine}></div>
+                <div className={styles.shortLine}></div>
+                <div className={styles.shortLine}></div>
+                <div className={styles.shortLine}></div>
+                <div className={styles.shortLine}></div>
+                <div className={styles.shortLine}></div>
+                <div className={styles.shortLine}></div>
+                <div className={styles.shortLine}></div>
+                <div className={styles.shortLine}></div>
+                <div className={styles.shortLine}></div>
+                <div className={styles.shortLine}></div>
+                <div className={styles.shortLine}></div>*/}
             <div className={styles.eleventhLineAnimation}>
                 <div className={styles.stayingChars}>
                     <div>K</div>
                     <div>ü</div>
                 </div>
                 <div className={styles.movingRightAnimation}>h</div>
+            </div>
             </div>
             <div className={styles.twelvesLine}>
                 <div className={styles.rotatedLineRight}> I</div>
