@@ -62,6 +62,7 @@ function App() {
                     </Route>
 
                     <Route path="staticInteractive">
+                        <Route path="blackInDarkIn" element={<CallOnMouseChanges animation={false} variable={false}/>}></Route>
                         <Route path="typographicsummerproject" element={<PageTurnOver/>}></Route>
                     </Route>
 
